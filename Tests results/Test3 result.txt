@@ -1,0 +1,37 @@
+Завершение с опорожнением.
+
+plc power supply
+q[0]  q2[0]  q22[0]  q3[0]  q31[0]
+q[1]  q2[0]  q22[0]  q3[0]  q31[0]
+V1[0]  V2[0]  V3[0]  V4[0]  V5[0]  V6[0]  tmrRun[0]
+
+startBtn
+q[1]  q2[0]  q22[0]  q3[0]  q31[0]
+q[2]  q2[1]  q22[0]  q3[0]  q31[0]
+V1[1]  V2[1]  V3[0]  V4[0]  V5[0]  V6[0]  tmrRun[0]
+
+Level = 30  full[1]
+swStop  withDrain
+q[2]  q2[1]  q22[0]  q3[0]  q31[0]
+q[2]  q2[2]  q22[1]  q3[0]  q31[0]
+V1[0]  V2[0]  V3[0]  V4[0]  V5[0]  V6[1]  tmrRun[0]
+
+Temp = 80  workTemp[1]
+q[2]  q2[2]  q22[1]  q3[0]  q31[0]
+q[2]  q2[2]  q22[2]  q3[0]  q31[0]
+V1[0]  V2[0]  V3[0]  V4[0]  V5[0]  V6[0]  tmrRun[0]
+
+Press = 100  workPress[1]
+q[2]  q2[2]  q22[2]  q3[0]  q31[0]
+q[2]  q2[2]  q22[3]  q3[0]  q31[0]
+V1[0]  V2[1]  V3[0]  V4[0]  V5[0]  V6[0]  tmrRun[0]
+
+Press = 10  Level = 20  minPress[1]  minLevel[1]
+q[2]  q2[2]  q22[3]  q3[0]  q31[0]
+q[2]  q2[3]  q22[0]  q3[0]  q31[0]
+V1[0]  V2[0]  V3[0]  V4[0]  V5[1]  V6[0]  tmrRun[0]
+
+Level = 10  empty[1]
+q[2]  q2[3]  q22[0]  q3[0]  q31[0]
+q[1]  q2[0]  q22[0]  q3[0]  q31[0]
+V1[0]  V2[0]  V3[0]  V4[0]  V5[0]  V6[0]  tmrRun[0]
